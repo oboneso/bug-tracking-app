@@ -1,0 +1,20 @@
+import colors from 'colors'
+
+// set log color theme
+const setLogColors = () => {
+  colors.setTheme({
+    file:     ['blue', 'bold'],
+    start:    'cyan',
+    success:  'green',
+    fail:     'red',
+    warn:     'yellow',
+    info:     'grey',
+    input:    'grey',
+    prompt:   'grey',
+    verbose:  'cyan',
+    rainbow:  'rainbow'
+  })
+}
+
+export default setLogColors
+
