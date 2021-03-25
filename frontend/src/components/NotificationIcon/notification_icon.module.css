@@ -1,0 +1,65 @@
+.notification_icon {
+	background: linear-gradient(rgba(66, 66, 186, 0.6), rgba(66, 66, 186, 0.9));
+	color: white;
+	border: none;
+	border-radius: 50%;
+	/* font-size: 2rem; */
+	padding: 3px;
+	width: 40px;
+	height: 40px;
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+	align-items: center;
+	box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+		2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.active {
+	background: linear-gradient(rgba(66, 66, 186, 0.6), rgba(66, 66, 186, 0.9));
+	color: white;
+	border: none;
+	border-radius: 50%;
+	font-size: 2rem;
+	width: 120px;
+	height: 120px;
+	display: grid;
+	text-align: center;
+	align-items: center;
+	box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+		inset -2px -2px 6px rgba(0, 0, 0, 1);
+}
+
+.addIcon {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 10px;
+	top: 60%;
+	background: white;
+	border-radius: 50%;
+	color: blue;
+	border: 1px solid black;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.dashedIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	border: 1px dashed grey;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 20px;
+	cursor: pointer;
+	transition: 300ms;
+}
+.dashedIcon:hover {
+	background: var(--main-bg-one);
+	box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+		2px 2px 6px rgba(0, 0, 0, 0.8);
+}

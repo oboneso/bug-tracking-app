@@ -1,0 +1,80 @@
+/* dashboard > homeview layout */
+.topButtons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 80%;
+}
+.contentBody {
+	display: none;
+}
+
+/* individial cards */
+.cardWrapper {
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+}
+.cardContentWrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+.cardHeader {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 30%;
+	width: 100%;
+	color: white;
+	background: orange;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.cardBody {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70%;
+}
+
+@media screen and (min-width: 600px) {
+	.topButtons {
+		width: 500px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 9999px) {
+	.topButtons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+	}
+
+	.cardWrapper {
+		margin: 10px;
+	}
+
+	.contentBody {
+		display: flex;
+		justify-content: center;
+		height: 70vh;
+		width: 95vw;
+		white-space: nowrap;
+		overflow-x: auto;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.topButtons {
+		width: 1000px;
+	}
+}

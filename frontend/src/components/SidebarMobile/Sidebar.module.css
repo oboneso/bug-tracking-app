@@ -1,0 +1,107 @@
+.navigation {
+	position: fixed;
+	width: 60px;
+	height: 100%;
+	background: #3e0748;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.active {
+	position: fixed;
+	width: 260px;
+	height: 100%;
+	background: #3e0748;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.navigation:hover {
+	width: 260px;
+}
+
+.ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.toggle {
+	position: absolute;
+	display: flex;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: #330748;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.falseToggle {
+	position: absolute;
+	display: flex;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: #ea1d63;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.x {
+	position: absolute;
+	display: flex;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: #ea1d63;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.bars {
+	position: absolute;
+	display: flex;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: #330748;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.icon {
+	position: absolute;
+	line-height: 60px;
+	font-size: 24px;
+	color: #fff;
+}
+
+.iconOff {
+	display: none;
+}
+
+.xIcon {
+	background: #ea1d63;
+	position: absolute;
+	line-height: 60px;
+	font-size: 24px;
+	color: #fff;
+}
+
+.xIconOff {
+	display: none;
+}

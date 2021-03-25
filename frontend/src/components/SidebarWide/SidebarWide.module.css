@@ -1,0 +1,49 @@
+/** @format */
+
+.navigationOpen {
+	display: flex;
+	position: fixed;
+	height: 100%;
+	background: var(--main-bg-one);
+	transition: 0.5s;
+	overflow: hidden;
+	cursor: pointer;
+	width: 250px;
+	/* background: var(--clr-darkblue); */
+	box-shadow: 0 5px 5px rgb(0 0 0 / 50%), inset 0 1px 1px rgb(255 255 255 / 10%);
+}
+
+.navigationClose {
+	display: flex;
+	position: fixed;
+	height: 100%;
+	background: var(--main-bg-one);
+	transition: 0.5s;
+	overflow: hidden;
+	cursor: pointer;
+	width: 60px;
+	/* background: var(--clr-darkblue); */
+	box-shadow: 0 5px 5px rgb(0 0 0 / 50%), inset 0 1px 1px rgb(255 255 255 / 10%);
+}
+
+.ul {
+	width: 100%;
+	text-align: left;
+	padding-inline-start: 0;
+}
+
+@media (max-width: 480px) {
+	.navigationClose {
+		display: flex;
+		position: fixed;
+		height: 100%;
+		background: var(--main-bg-one);
+		transition: 0.5s;
+		overflow: hidden;
+		cursor: pointer;
+		width: 0;
+		/* background: var(--clr-darkblue); */
+		box-shadow: 0 5px 5px rgb(0 0 0 / 50%),
+			inset 0 1px 1px rgb(255 255 255 / 10%);
+	}
+}

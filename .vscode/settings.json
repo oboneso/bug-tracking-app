@@ -1,3 +1,22 @@
 {
-  "git.ignoreLimitWarning": true
+	"workspace.isHidden": true,
+	"files.exclude": {
+		"settings.json": true,
+		"frontend/public": true,
+		"frontend/node_modules": true,
+		"frontend/jsconfig.json": true,
+		"frontend/package-lock.json": true,
+		"frontend/package.json": true,
+		"node_modules": true,
+		"NOTES": true,
+		".env": true,
+		".eslintcache": true,
+		".gitignore": true,
+		"package-lock.json": true,
+		"package.json": true,
+		"frontend/src/index.js": true,
+		"frontend/src/routes.js": true,
+
+		"frontend/src/serviceWorker.js": true
+	}
 }

@@ -1,36 +1,69 @@
-import mongoose from 'mongoose'
+/** @format */
 
-console.log('accessing userModel.js file'.file)
+import mongoose from 'mongoose';
+import bcrypt from 'bcryptjs';
 
 const userSchema = mongoose.Schema(
-  {
-    name: { 
-      type: String, 
-      required: true 
-    },
-    email: { 
-      type: String, 
-      required: true,
-      unique: true
-    },
-    password: { 
-      type: String,
-      required: true
-    },
-    isAdmin: { 
-      type: Boolean,
-      required: true,
-      default: false
-    },
-    avatar: {
-      type: String,
-    }
-  }, 
-  {
-    timestamps: true // mongoose allows a second argument of options, 'timestamps' auto populates fields: 'created at' & 'updated at'
-  }
-)
+	{
+		googleId: {
+			type: String,
+		},
+		name: {
+			type: String,
+		},
+		email: {
+			type: String,
+			required: true,
+			unique: true,
+		},
+		password: {
+			type: String,
+			required: true,
+		},
+		role: {
+			type: String,
+			required: true,
+			default: 'Developer',
+		},
+		avatar: {
+			type: String,
+			default:
+				'https://png.pngtree.com/png-clipart/20210310/original/pngtree-graphic-default-avatar-png-image_5938131.jpg',
+		},
+		username: {
+			type: String,
+			unique: true,
+		},
+		loggedIn: {
+			type: Boolean,
+		},
+		friends: {
+			type: Array,
+		},
+		friendsPending: {
+			type: Array,
+		},
+		bio: {
+			type: String,
+		},
+	},
+	{
+		timestamps: true, // mongoose allows a second argument of options, 'timestamps' auto populates fields: 'created at' & 'updated at'
+	},
+);
 
-const User = mongoose.model('User', userSchema)
+userSchema.methods.matchPassword = async function (enteredPassword) {
+	return await bcrypt.compare(enteredPassword, this.password);
+};
 
-export default User
+userSchema.pre('save', async function (next) {
+	if (!this.isModified('password')) {
+		next();
+	}
+	const salt = await bcrypt.genSalt(10);
+	this.password = await bcrypt.hash(this.password, salt);
+});
+
+const User = mongoose.model('User', userSchema);
+
+export default User;

@@ -1,23 +1,25 @@
-import mongoose from 'mongoose'
+/** @format */
 
-console.log('accessing /config/db.js file'.file)
+import mongoose from 'mongoose';
 
 const connectDB = async () => {
-  try {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-      useCreateIndex: true
-    })
+	try {
+		const conn = await mongoose.connect(
+			'mongodb+srv://keith:auburn10@cluster0.uwyzy.mongodb.net/bugtrackerapp?retryWrites=true&w=majority',
+			{
+				useUnifiedTopology: true,
+				useNewUrlParser: true,
+				useCreateIndex: true,
+			},
+		);
 
-    console.log(`MongoDB Connected: ${conn.connection.host}`.rainbow.underline)
+		console.log(`MongoDB Connected: ${conn.connection.host}`.rainbow.underline);
+	} catch (error) {
+		console.log(`Error: ${error.message}`.red.underline.bold);
 
-  } catch (error) {
-    console.log(`Error: ${error.message}`.red.underline.bold)
+		// exit(1 = 'with failure')
+		process.exit(1);
+	}
+};
 
-    // exit(1 = 'with failure')
-    process.exit(1)
-  }
-}
-
-export default connectDB
+export default connectDB;

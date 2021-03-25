@@ -1,0 +1,55 @@
+.dashboardContainer {
+	display: grid;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.sideToggle {
+	width: 60px;
+	background: white;
+	border: none;
+	padding: 0;
+}
+.sideToggle:hover {
+	background: grey;
+}
+
+.sidebar {
+	position: fixed;
+	top: 50px;
+	z-index: 9;
+}
+
+.header {
+	display: flex;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.9);
+	position: fixed;
+	width: 100vw;
+	z-index: 10;
+}
+
+.mainContent {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	top: 50px;
+	position: relative;
+	height: calc(100% - 50px);
+	transition: 0.5s;
+	background: #f0f2f5;
+	overflow: hidden;
+}
+
+/* @media screen and (min-width: 0px) and (max-width: 480px) {
+	.mainContent {
+	}
+} */
+@media screen and (min-width: 481px) and (max-width: 10000px) {
+	.mainContent {
+		left: 60px;
+		width: calc(100% - 60px);
+	}
+}

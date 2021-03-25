@@ -1,0 +1,124 @@
+/** @format */
+
+@media (max-width: 414px) {
+	.registerContainer {
+		height: 100vh;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 415px) and (max-width: 2000px) {
+	.registerContainer {
+		width: 100vw;
+		justify-content: center;
+		height: 100vh;
+	}
+
+	.formHeader {
+		position: relative;
+		right: 40px;
+		display: flex;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.formFooter {
+		position: relative;
+		left: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: right;
+		align-items: flex-end;
+	}
+}
+
+.formContainer {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.icon {
+	position: absolute;
+	font-size: 26px;
+	color: #3e44af;
+	top: 10px;
+	left: 10px;
+}
+
+.formHeader {
+	display: flex;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.h2 {
+	color: #607d8b;
+	font-weight: 500;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 3px;
+	border-bottom: 3px solid #3e44af;
+}
+
+.inputGroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.inputBox {
+	margin-bottom: 15px;
+}
+
+label {
+	font-size: 12px;
+	color: #607d8b;
+	margin-bottom: 0px !important;
+}
+.input {
+	width: 100%;
+	padding: 5px 10px;
+	outline: none;
+	font-weight: 400;
+	border: none;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background: rgba(169, 170, 190, 0.1);
+	border-radius: 30px;
+}
+
+.inputSubmit {
+	width: 120px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #fff;
+	background: #3e44af;
+	border-radius: 30px;
+}
+
+.formFooter {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: flex-end;
+}
+
+/* Small Tablet Styles */
+@media screen and (min-width: 620px) {
+}
+
+/* Large Tablet and Laptop Styles */
+@media screen and (min-width: 960px) {
+}

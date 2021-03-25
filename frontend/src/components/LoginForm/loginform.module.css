@@ -1,0 +1,113 @@
+.loginFormContainer {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: flex-end; */
+	height: 500px;
+	text-align: center;
+	background: var(--main-bg-one);
+	border: 2px solid white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5),
+		inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.loginHeaderContainer {
+	margin-top: 10px;
+}
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.loginTitle {
+	display: grid;
+	letter-spacing: 2px;
+	margin-block-end: auto;
+	padding-bottom: 3px;
+	border-bottom: 5px solid var(--clr-fun-fuscia);
+	width: fit-content;
+}
+
+.inputBox {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.inputSpan {
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	text-align: left;
+	color: var(--clr-grey-blue);
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.input {
+	width: 330px;
+	padding: 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid var(--clr-grey-blue);
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: var(--clr-grey-blue);
+	border-radius: 10px;
+}
+
+.input:focus {
+	outline: var(--clr-darkblue);
+}
+
+.inputSubmit {
+	padding: 15px 20px;
+	outline: none;
+	font-weight: 500;
+	border: none;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	background: var(--clr-darkblue);
+	border-radius: 10px;
+	margin-top: 35px;
+	width: 90%;
+	cursor: pointer;
+}
+
+.inputSubmit:hover {
+	background: var(--clr-fun-fuscia);
+}
+
+.registerContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+}
+.registerButton {
+	border: 2px solid var(--clr-grey-blue);
+	color: var(--clr-grey-blue);
+	width: 250px;
+	padding: 10px 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.registerButton:hover {
+	filter: brightness(0.8);
+}
+/* Small Tablet Styles */
+@media screen and (min-width: 620px) {
+}
+
+/* Large Tablet and Laptop Styles */
+@media screen and (min-width: 960px) {
+}

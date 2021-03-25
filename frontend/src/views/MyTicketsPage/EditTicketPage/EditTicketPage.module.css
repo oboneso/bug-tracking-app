@@ -1,0 +1,145 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 4px;
+	height: 45vh;
+	width: 100%;
+	overflow: auto;
+}
+
+.titleContainer {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 100%;
+}
+
+.title {
+	color: red;
+}
+
+.formGrid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	width: 100%;
+}
+
+.labelColumn {
+	grid-column: 1 / 2;
+	display: grid;
+	grid-template-rows: repeat(8, 1fr);
+	align-items: center;
+	font-size: 12px;
+	text-align: right;
+	grid-gap: 2px;
+	margin-right: 5px;
+}
+
+.label {
+	margin: 0;
+}
+
+.dataColumn {
+	grid-column: 2 / 3;
+	display: grid;
+	grid-template-rows: repeat(8, 1fr);
+	grid-gap: 2px;
+}
+
+.header {
+	display: flex;
+	grid-row: 1 / 2;
+	width: 500px;
+	height: 40px;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.headText {
+	top: 10px;
+}
+
+.icon {
+	font-size: 12px;
+	margin-right: 8px;
+}
+.headButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.5vw;
+	border-radius: 5px;
+	padding: 7px;
+	border: 0px;
+	background-color: blue;
+	color: white;
+	font-weight: 700;
+	height: 33px;
+	width: 12vw;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+		0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+		0 8px 16px rgba(0, 0, 0, 0.11);
+}
+.mainContainer {
+	grid-column: 1 / 13;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	overflow-y: scroll;
+}
+
+.commentContainer {
+	margin: 10px;
+	border-radius: 10px;
+	padding-top: 10px;
+	height: 60%;
+	overflow-y: scroll;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1),
+		-3px -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dataFieldContainer {
+	display: grid;
+	grid-template-columns: 100px 1fr 40px;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	padding: 4px;
+}
+
+.dataFieldContainer:active {
+	border: 1px solid blue;
+}
+
+.label {
+	font-weight: bold;
+	width: 100px;
+}
+
+.text {
+	margin-left: 10px;
+	margin-bottom: 0;
+	font-size: 12px;
+	transform: scale(0.9);
+}
+
+.dataField {
+	border: none;
+	width: 100%;
+}
+
+.editIcon {
+	display: grid;
+	justify-self: center;
+	color: blue;
+}
+
+.stopIcon {
+	color: red;
+}
+.checkIcon {
+	color: green;
+}

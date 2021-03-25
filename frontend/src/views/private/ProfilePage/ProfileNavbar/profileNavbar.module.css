@@ -1,0 +1,61 @@
+.profileNavbarContainer {
+	display: flex;
+	width: 90%;
+	height: auto;
+	padding: 3px 20px;
+	border-top: 1px solid rgba(150, 148, 148, 0.568);
+	justify-content: space-between;
+}
+
+.navLeft {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.navRight {
+	display: flex;
+	align-items: center;
+	max-width: 100%;
+}
+
+.navTab {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	border-radius: 10px;
+	padding: 5px 15px;
+	cursor: pointer;
+	font-weight: 400;
+	color: rgb(32, 32, 32);
+}
+
+.navTab:hover {
+	background: #f2f3f5;
+}
+
+.active {
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid blue;
+	color: blue;
+	height: 50px;
+	font-weight: 400;
+	padding: 5px 15px;
+}
+
+.editButtonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 135px;
+	height: 37px;
+	background: #1877f2;
+	color: white;
+	font-weight: 500;
+	border-radius: 10px;
+}
+
+.editButtonContainer:hover {
+	background: #6ca0ff;
+}

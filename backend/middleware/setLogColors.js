@@ -14,6 +14,7 @@ const setLogColors = () => {
     verbose:  'cyan',
     rainbow:  'rainbow'
   })
+  console.log('running function: setLogColors'.file)
 }
 
 export default setLogColors

@@ -1,0 +1,146 @@
+.tableContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	width: 90vw;
+	height: 80vh;
+	overflow: scroll;
+	transition: 1.3s ease-in-out;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+.tableHeader {
+	font-size: 12px;
+	display: table-cell;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: sticky;
+	top: 0;
+	background: white;
+	font-weight: 600;
+}
+.tableCell {
+	font-size: 12px;
+	display: table-cell;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.row {
+	display: table-row;
+}
+.row:hover {
+	background: #f0f2f5;
+}
+
+.iconContainer {
+	text-align: right;
+}
+
+.iconWrapper {
+	display: flex;
+}
+.trashIcon {
+	color: red;
+	margin: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: 500ms;
+}
+.trashIcon:hover {
+	filter: brightness(0.9);
+	transform: scale(1.2);
+	transition: 500ms;
+}
+
+.editIcon {
+	color: blue;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: 500ms;
+}
+.editIcon:hover {
+	filter: brightness(0.9);
+	transform: scale(1.2);
+	transition: 500ms;
+}
+
+.createTicketButton {
+	height: 100%;
+	padding: 8px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: 500ms;
+	outline: none;
+}
+
+.createTicketButton:hover {
+	filter: brightness(0.9);
+}
+
+.cardWrapper {
+	margin: 10px;
+	width: 90%;
+	height: fit-content;
+}
+
+.cardHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: rgb(173, 173, 173);
+	color: white;
+	width: 100%;
+	height: 40px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 5px 10px;
+}
+
+.cardBody {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.statusOpen {
+	background: RGB(72, 251, 71);
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	width: 90px;
+	border-radius: 30px;
+}
+.statusClosed {
+	background: red;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	width: 90px;
+	border-radius: 30px;
+}
+.leftHeader {
+	display: flex;
+}
+
+.ticketTypeIcon {
+	color: white;
+	margin-right: 10px;
+}
+
+.cardFooter {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 5px 20px;
+	border-top: 1px solid gray;
+}

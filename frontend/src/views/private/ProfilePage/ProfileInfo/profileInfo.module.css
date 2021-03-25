@@ -1,0 +1,38 @@
+.profileInfoContainer {
+	background: white;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	padding: 20px;
+	width: auto;
+	min-width: 30%;
+	overflow-y: scroll;
+	box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.05),
+		1px -1px 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.userInfoSection {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.profileDataItem {
+	display: flex;
+
+	width: auto;
+	align-items: center;
+}
+
+.profileInput {
+	width: 100%;
+
+	font-size: 14px;
+	border-radius: 5px;
+}

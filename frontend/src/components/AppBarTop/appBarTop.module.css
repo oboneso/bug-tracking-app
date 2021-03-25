@@ -1,0 +1,61 @@
+/** @format */
+
+.appBarContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 20px;
+}
+
+.search {
+	justify-self: center;
+	display: flex;
+	align-items: center;
+	color: white;
+	background: rgba(195, 195, 195, 0.326);
+	padding: 5px;
+	border-radius: 20px;
+
+	width: 40vw;
+}
+
+.label {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.input {
+	height: 80%;
+	width: 100%;
+	border: none;
+	border-radius: 20px;
+	padding: 5px;
+	font-size: 15px;
+	color: grey;
+}
+
+.profileButton {
+	background: none;
+	color: blue;
+	border: none;
+}
+.profileButton:hover {
+	background: blue;
+	color: white;
+	border-radius: 50%;
+	padding: 1px;
+}
+
+.profileIcon {
+	color: blue;
+	font-size: 26px;
+}
+
+.profileIcon:hover {
+	color: white;
+	background: blue;
+	border-radius: 50%;
+	border: 1px solid blue;
+}

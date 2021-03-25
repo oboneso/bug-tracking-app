@@ -1,0 +1,58 @@
+/** @format */
+
+.modalContainer {
+	display: grid;
+	position: absolute;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 9999;
+}
+
+.modalContentContainer {
+	display: flex;
+	position: relative;
+
+	height: 70vh;
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.closeButtonContainer {
+	display: flex;
+
+	align-items: center;
+	text-align: center;
+
+	width: 30px;
+	height: 30px;
+	background: red;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.closeButton {
+	width: 100%;
+	color: white;
+	font-weight: 500;
+}
+
+.none {
+	display: none;
+}
+
+.modalContent {
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+}

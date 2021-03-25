@@ -4,26 +4,36 @@
   "description": "Ticket system for tracking code bugs and feature requests",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": "14.13.0",
+    "git": "2.25.0"
+  },
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "author": "Keith MacDonald",
   "license": "MIT",
   "dependencies": {
-    "@sentry/react": "^5.29.2",
-    "@sentry/tracing": "^5.29.2",
+    "@sentry/node": "^5.29.2",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
     "mongoose": "^5.11.8",
     "morgan": "^1.10.0",
+    "multer": "^1.4.2",
     "nodemon": "^2.0.6",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-form": "^8.3.7"
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
   }
 }

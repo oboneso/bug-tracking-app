@@ -1,0 +1,100 @@
+.main {
+	display: flex;
+	font-size: 12px;
+	height: 100%;
+	width: 100%;
+}
+
+.buttonContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 150px;
+}
+
+.icon {
+	font-size: 12px;
+	margin-right: 8px;
+}
+.headButton {
+	display: flex;
+	align-items: center;
+	padding: 7px;
+	border: 1px solid rgba(211, 211, 211, 0.267);
+	background-color: white;
+	color: blue;
+	font-weight: 700;
+	height: 33px;
+}
+
+.headButton:hover {
+	background: linear-gradient(rgba(66, 66, 186, 0.6), rgba(66, 66, 186, 0.9));
+	color: white;
+	transform: scale(0.98);
+	border: none;
+}
+
+.commentContainer {
+	margin: 10px;
+	border-radius: 10px;
+	padding-top: 10px;
+	height: 95%;
+	overflow-y: scroll;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1),
+		-3px -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dataContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	padding: 4px;
+	height: 45vh;
+	width: 100%;
+	overflow: auto;
+}
+.dataFieldContainer {
+	display: grid;
+	grid-template-columns: 100px 1fr 40px;
+	height: auto;
+	width: 100%;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	padding: 4px;
+}
+
+.label {
+	font-weight: bold;
+	width: 100px;
+}
+
+.text {
+	margin-left: 10px;
+	margin-bottom: 0;
+	font-size: 12px;
+	transform: scale(0.9);
+}
+
+.dataField {
+	border: none;
+	width: 100%;
+}
+
+.editIcon {
+	display: grid;
+	justify-self: center;
+	color: blue;
+}
+
+.stopIcon {
+	color: red;
+}
+.checkIcon {
+	color: green;
+}
+
+.commentHeader {
+	text-align: center;
+}
