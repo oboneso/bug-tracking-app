@@ -1,1 +1,0 @@
-Middleware:  functions that have access to the request/response (req, res) cycle
